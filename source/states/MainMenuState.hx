@@ -63,6 +63,8 @@ class MainMenuState extends MusicBeatState
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
+                FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+
 		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
 		magenta.antialiasing = ClientPrefs.data.antialiasing;
 		magenta.scrollFactor.set(0, yScroll);

@@ -185,6 +185,8 @@ class FreeplayState extends MusicBeatState
 		
 		player = new MusicPlayer(this);
 		add(player);
+
+                FlxG.sound.playMusic(Paths.music('freeplayMenu'), 0);
 		
 		changeSelection();
 		updateTexts();

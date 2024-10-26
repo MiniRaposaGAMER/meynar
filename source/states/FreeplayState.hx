@@ -34,6 +34,7 @@ class FreeplayState extends MusicBeatState
 	var lerpRating:Float = 0;
 	var intendedScore:Int = 0;
 	var intendedRating:Float = 0;
+	var boyfriend:Character = null;
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
@@ -107,6 +108,18 @@ class FreeplayState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
 		bg.screenCenter();
+
+		bg = new FlxSprite().loadGraphic(Paths.image('menuoverlay'));
+		bg.antialiasing = ClientPrefs.data.antialiasing;
+		add(bg);
+		bg.screenCenter();
+
+		boyfriend = new Character(840, 170, 'freeplaychar', true);
+		boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.75));
+		boyfriend.updateHitbox();
+		boyfriend.dance();
+		boyfriend.animation.finishCallback = function (name:String) boyfriend.dance();
+		boyfriend.antialiasing = ClientPrefs.data.antialiasing;
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);

@@ -7,8 +7,6 @@ import backend.Song;
 import objects.HealthIcon;
 import objects.MusicPlayer;
 
-import objects.Character; //bolsonaro, yeah em 2018
-
 import options.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
 
@@ -111,10 +109,10 @@ class FreeplayState extends MusicBeatState
 		add(bg);
 		bg.screenCenter();
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuoverlay'));
-		bg.antialiasing = ClientPrefs.data.antialiasing;
-		add(bg);
-		bg.screenCenter();
+		bg2 = new FlxSprite().loadGraphic(Paths.image('menuoverlay'));
+		bg2.antialiasing = ClientPrefs.data.antialiasing;
+		add(bg2);
+		bg2.screenCenter();
 
 		boyfriend = new Character(840, 170, 'freeplaychar', true);
 		boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.75));

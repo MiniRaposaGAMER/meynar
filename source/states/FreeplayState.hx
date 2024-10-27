@@ -7,6 +7,8 @@ import backend.Song;
 import objects.HealthIcon;
 import objects.MusicPlayer;
 
+import objects.Character;
+
 import options.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
 

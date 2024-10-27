@@ -123,6 +123,7 @@ class FreeplayState extends MusicBeatState
 		boyfriend.dance();
 		boyfriend.animation.finishCallback = function (name:String) boyfriend.dance();
 		boyfriend.antialiasing = ClientPrefs.data.antialiasing;
+		add(boyfriend);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);

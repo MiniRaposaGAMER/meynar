@@ -7,6 +7,8 @@ import backend.Song;
 import objects.HealthIcon;
 import objects.MusicPlayer;
 
+import objects.Character; //bolsonaro, yeah em 2018
+
 import options.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
 

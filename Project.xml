@@ -29,7 +29,6 @@
 	<define name="IRIS_DEBUG"/>
 	
 	<define name="SHOW_LOADING_SCREEN" />
-	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE THE PSYCH LOGO FROM LOADING SCREEN -->
 
 	<section if="officialBuild">
 		<define name="BASE_GAME_FILES" />
